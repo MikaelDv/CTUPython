@@ -1,0 +1,11 @@
+unidade = input("Em qual unidade você estuda?\n")
+curso = input("Qual seu curso?\n")
+nome = input("Qual seu nome?\n")
+rm = input("Qual é o seu RM?\n")
+email = input("Qual é o seu e-mail pessoal?\n")
+
+print("\n\nSeus dados:" "\nunidade: ", unidade)
+print("curso: ", curso)
+print("nome: ", nome)
+print("RM: ", rm)
+print("e-mail: ", email)
