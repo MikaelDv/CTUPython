@@ -10,9 +10,7 @@ def main():
         dificuldade -= 1
 
     num_secreto = rdm.choice(possibilidade)
-    
     tentativa = 0
-
     tentativas = 0
 
     while(num_secreto != tentativa):
@@ -28,10 +26,14 @@ def main():
             print(f"**********Com {tentativas} tentativas!**********")
             break
 
-main()
+def jogar_novamente():
+    while True:
+        try:
+            main()
+            jogar_nvmt = input("Deseja jogar novamente? (Y/n) ")
+            if(jogar_nvmt.lower() != "y"):
+                break
+        except:
+            print("Opção inválida! Tente novamente.")
 
-jogar_nvmt = input("Deseja jogar novamente? (Y/n) ")
-
-if(jogar_nvmt == "y"):
-    main()
-
+jogar_novamente()
