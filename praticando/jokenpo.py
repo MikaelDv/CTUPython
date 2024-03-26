@@ -19,24 +19,24 @@ def main():
         total_jogos += 1
         acertos += 1
         porcentagem = (acertos / total_jogos) * 100
-        print(f"Você ganhou! \nUsuário: {dicionario[jogada]} \nPC: {dicionario[escolha_pc]} \nPorcentagem de nggr: {round(porcentagem, 1)}%")     
+        print(f"Você ganhou! \nUsuário: {dicionario[jogada]} \nPC: {dicionario[escolha_pc]} \nPorcentagem de acerto: {round(porcentagem, 1)}%")     
     elif(escolha_pc == jogada):
         total_jogos += 1
         porcentagem = (acertos / total_jogos) * 100
-        print(f"Empate! \nUsuário: {dicionario[jogada]} \nPC: {dicionario[escolha_pc]} \nPorcentagem de nggr: {round(porcentagem, 1)}%")
+        print(f"Empate! \nUsuário: {dicionario[jogada]} \nPC: {dicionario[escolha_pc]} \nPorcentagem de acerto: {round(porcentagem, 1)}%")
     elif(escolha_pc == 1 and jogada == 3):
         total_jogos += 1
         porcentagem = (acertos / total_jogos) * 100
-        print(f"Você perdeu... \nUsuário: {dicionario[jogada]} \nPC: {dicionario[escolha_pc]} \nPorcentagem de nggr: {round(porcentagem, 1)}%")
+        print(f"Você perdeu... \nUsuário: {dicionario[jogada]} \nPC: {dicionario[escolha_pc]} \nPorcentagem de acerto: {round(porcentagem, 1)}%")
     elif(escolha_pc > jogada):
         total_jogos += 1
         porcentagem = (acertos / total_jogos) * 100
-        print(f"Você perdeu... \nUsuário: {dicionario[jogada]} \nPC: {dicionario[escolha_pc]} \nPorcentagem de nggr: {round(porcentagem, 1)}%")
+        print(f"Você perdeu... \nUsuário: {dicionario[jogada]} \nPC: {dicionario[escolha_pc]} \nPorcentagem de acerto: {round(porcentagem, 1)}%")
     else:
         total_jogos += 1
         acertos += 1
         porcentagem = (acertos / total_jogos) * 100
-        print(f"Você ganhou! \nUsuário: {dicionario[jogada]} \nPC: {dicionario[escolha_pc]} \nPorcentagem de nggr: {round(porcentagem, 1)}%")
+        print(f"Você ganhou! \nUsuário: {dicionario[jogada]} \nPC: {dicionario[escolha_pc]} \nPorcentagem de acerto: {round(porcentagem, 1)}%")
 
 def jogar_novamente():
     global porcentagem
