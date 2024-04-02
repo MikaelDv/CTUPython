@@ -1,4 +1,4 @@
-linha = int(input("Quantas linhas?"))
+linha = int(input("Quantas linhas? "))
 espaco = linha - 1
 print("")
 for l in range(1, linha*2, 2):
