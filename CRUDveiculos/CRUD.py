@@ -24,7 +24,8 @@ def cadastrar(lista_carros, uso):
     veiculo["modelo"] = input("Qual o modelo?\n").upper()
     veiculo["ano"] = input("Qual é o ano do veículo?\n").upper()
     veiculo["placa"] = input("Por último, qual a placa do veículo?\n").upper()
-    print(f"MODELO: {veiculo['modelo']} \nMARCA: {veiculo['marca']} \nANO: {veiculo['ano']} \nPLACA: {veiculo['placa']} \ncadastrado.")
+    print(
+        f"MODELO: {veiculo['modelo']} \nMARCA: {veiculo['marca']} \nANO: {veiculo['ano']} \nPLACA: {veiculo['placa']} \ncadastrado.")
     sleep(2)
     lista_carros.append(veiculo)
 
@@ -69,15 +70,25 @@ def procurar(lista_carros):
                 sleep(2)
 
 
+def sair():
+    quit()
+
+
+funcoes = {
+    "c": cadastrar,
+    "l": listar,
+    "p": procurar
+}
 while True:
-    clear()
-    print(menu)
-    opt = input().lower()
-    if opt == "c":
-        cadastrar(carros, "cadastrar")
-    elif opt == "l":
-        listar(carros)
-    elif opt == "p":
-        procurar(carros)
-    else:
-        break
+    try:
+        clear()
+        print(menu)
+        opt = input().lower()
+        if opt == "c":
+            funcoes[opt](carros, "cadastrar")
+        elif opt == "s":
+            break
+        else:
+            funcoes[opt](carros)
+    except:
+        print("Opção inválida!")
