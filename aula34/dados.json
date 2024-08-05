@@ -1,0 +1,17 @@
+[
+    {
+        "nome": "João Silva",
+        "telefone": "(11) 1111-1111",
+        "idade": 23
+    },
+    {
+        "nome": "Maria Silva",
+        "telefone": "(11) 2222-2222",
+        "idade": 22
+    },
+    {
+        "nome": "Julliana Karol Gomes Destefani",
+        "telefone": "4002-8922",
+        "idade": 17
+    }
+]
