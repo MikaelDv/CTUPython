@@ -1,0 +1,39 @@
+POST https://tdspm-65f5c-default-rtdb.firebaseio.com/contatos.json HTTP/1.1
+Content-Type: application/json
+
+{
+    "nome": "João Silva",
+    "email": "joao@teste.com",
+    "telefone": "(11) 1111-1111"
+}
+
+
+###
+
+POST https://tdspm-65f5c-default-rtdb.firebaseio.com/contatos.json HTTP/1.1
+Content-Type: application/json
+
+{
+    "nome": "Julliana Karol Gomes Destefani",
+    "email": "jujubalindinha2511@gmail.com",
+    "telefone": "(11) 2222-2222"
+}
+
+###
+
+GET https://tdspm-65f5c-default-rtdb.firebaseio.com/contatos.json HTTP/1.1
+
+###
+
+DELETE https://tdspm-65f5c-default-rtdb.firebaseio.com/contatos/-O6LfFG7-9i-NFEi6Reu.json HTTP/1.1
+
+###
+
+PUT https://tdspm-65f5c-default-rtdb.firebaseio.com/contatos/-O6LhpCSAgk0G4C6bgBd.json HTTP/1.1
+Content-Type: application/json
+
+{
+    "nome": "João Santos",
+    "email": "joao.santos@teste.com",
+    "telefone": "(13) 1111-1111"
+}
